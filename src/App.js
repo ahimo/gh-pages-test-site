@@ -12,9 +12,9 @@ const HelloWorld = ()=>(
 const App = ()=>(
     <BrowserRouter>
         <div>
-            <Route exact path='/'      component={HelloWorld} />
-            <Route       path='/page1' component={page1} />
-            <Route       path='/page2' component={page2} />
+            <Route exact path={`${process.env.PUBLIC_URL}/`}      component={HelloWorld} />
+            <Route       path={`${process.env.PUBLIC_URL}/page1`} component={page1} />
+            <Route       path={`${process.env.PUBLIC_URL}/page2`} component={page2} />
         </div>
     </BrowserRouter>
 )
